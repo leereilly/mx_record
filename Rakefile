@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "mx_record"
   gem.homepage = "http://github.com/leereilly/mx_record"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Find MX records for a given domain name}
+  gem.description = %Q{Find MX records for a given domain name}
   gem.email = "lee@leereilly.net"
   gem.authors = ["Lee Reilly"]
   # dependencies defined in Gemfile
