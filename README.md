@@ -7,7 +7,7 @@
 ```ruby
 MXRecord::get_server('google.com')
   #=> aspmx.l.google.com
-    
+```    
     
 ```ruby
 MXRecord::get_server('rangers.co.uk')
