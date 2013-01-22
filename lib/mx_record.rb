@@ -19,9 +19,11 @@ module MXRecord
 
   # Obtain the preferred mail server based on the MX record's preference.
   #
-  # Returns a String containing the mail server name e.g. aspmx.l.google.com.
+  # Returns a String containing the mail server name e.g. aspmx.l.google.com;
+  # returns nil if no servers are found.
   def self.primary_server(domain)
     servers = mail_servers(domain)
+
     primary_server = servers.first
 
     servers.each do |server|

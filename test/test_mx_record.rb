@@ -11,4 +11,12 @@ class TestMxRecord < Test::Unit::TestCase
     assert_equal 5, mx_servers.size
   end
 
+  should "return nothing when valid domains have no mail servers" do
+    assert_equal [], MXRecord::mail_servers('example.com')
+  end
+
+  should "return nothing when invalid domains are supplied" do
+    assert_equal [], MXRecord::mail_servers('git.hub')
+  end
+
 end
