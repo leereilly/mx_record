@@ -5,12 +5,12 @@ A mail exchanger record (MX record) is a type of resource record in the Domain N
 # Usage
 
 ```ruby
-MXRecord::get_server('google.com')
+MXRecord::primary_server('google.com')
   #=> aspmx.l.google.com
 ```
 
 ```ruby
-MXRecord::get_server('rangers.co.uk')
+MXRecord::primary_server('rangers.co.uk')
   #=> mail.rangers.co.uk
 ```
 
