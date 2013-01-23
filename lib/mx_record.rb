@@ -24,6 +24,8 @@ module MXRecord
   def self.primary_server(domain)
     servers = mail_servers(domain)
 
+    return nil if servers.empty?
+
     primary_server = servers.first
 
     servers.each do |server|
