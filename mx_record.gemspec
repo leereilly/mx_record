@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "mx_record"
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lee Reilly"]
-  s.date = "2013-01-22"
+  s.date = "2013-01-23"
   s.description = "Find MX records for a given domain name"
   s.email = "lee@leereilly.net"
   s.extra_rdoc_files = [
